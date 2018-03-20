@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="ngrok centos," />
+  <meta name="keywords" content="ngrok,centos," />
 
 
 
@@ -79,22 +79,22 @@
 
 
 
-<meta name="description" content="基于CentOS6.5 自建ngrok服务 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放  安装ngrok服务之前需要先配置Go和Git环境 Install Go 1.5 On CentOS 6 下载编译好的二进制文件压缩包 go1.5.linux-amd64.tar.gz12345cd">
-<meta name="keywords" content="ngrok centos">
+<meta name="description" content="基于CentOS6.5 自建ngrok服务 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放  安装ngrok服务之前需要先配置Go和Git环境">
+<meta name="keywords" content="ngrok,centos">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于CentOS6.5 自建ngrok服务">
 <meta property="og:url" content="http://xfun.me/x/install-ngrok-on-centos6/index.html">
-<meta property="og:site_name" content="小凡部落">
-<meta property="og:description" content="基于CentOS6.5 自建ngrok服务 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放  安装ngrok服务之前需要先配置Go和Git环境 Install Go 1.5 On CentOS 6 下载编译好的二进制文件压缩包 go1.5.linux-amd64.tar.gz12345cd">
+<meta property="og:site_name" content="小凡原理">
+<meta property="og:description" content="基于CentOS6.5 自建ngrok服务 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放  安装ngrok服务之前需要先配置Go和Git环境">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/267822-c9fa553a9756e0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/267822-98556ca8358f97da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/267822-7c2b3af8b5a8cf91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/267822-3da0967492388d82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-03-19T09:53:12.915Z">
+<meta property="og:updated_time" content="2018-03-20T01:05:14.365Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于CentOS6.5 自建ngrok服务">
-<meta name="twitter:description" content="基于CentOS6.5 自建ngrok服务 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放  安装ngrok服务之前需要先配置Go和Git环境 Install Go 1.5 On CentOS 6 下载编译好的二进制文件压缩包 go1.5.linux-amd64.tar.gz12345cd">
+<meta name="twitter:description" content="基于CentOS6.5 自建ngrok服务 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放  安装ngrok服务之前需要先配置Go和Git环境">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/267822-c9fa553a9756e0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -131,7 +131,7 @@
 
 
 
-  <title>基于CentOS6.5 自建ngrok服务 | 小凡部落</title>
+  <title>基于CentOS6.5 自建ngrok服务 | 小凡原理</title>
   
 
 
@@ -161,7 +161,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">小凡部落</span>
+        <span class="site-title">小凡原理</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -247,7 +247,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小凡部落">
+      <meta itemprop="name" content="小凡原理">
     </span>
 
     
@@ -309,6 +309,7 @@
 <p>ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放</p>
 </blockquote>
 <p>安装ngrok服务之前需要先配置<code>Go</code>和<code>Git</code>环境</p>
+<a id="more"></a>
 <h2 id="Install-Go-1-5-On-CentOS-6"><a href="#Install-Go-1-5-On-CentOS-6" class="headerlink" title="Install Go 1.5 On CentOS 6"></a>Install Go 1.5 On CentOS 6</h2><p> 下载编译好的二进制文件压缩包 <code>go1.5.linux-amd64.tar.gz</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /tmp</span><br><span class="line">wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz</span><br><span class="line"></span><br><span class="line">如果提示证书错误或者无法下载，用下面这个命令试一下：</span><br><span class="line">wget -r -np -nd --accept=gz --no-check-certificate https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure></p>
 <hr>
 <p>解压下载的二进制压缩包到  <code>/usr/local</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -C /usr/local -xvzf /tmp/go1.5.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure></p>
@@ -372,7 +373,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ngrok-centos/" rel="tag"># ngrok centos</a>
+            <a href="/tags/ngrok/" rel="tag"># ngrok</a>
+          
+            <a href="/tags/centos/" rel="tag"># centos</a>
           
         </div>
       
@@ -381,6 +384,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/x/git-credential-caching-seconds/" rel="prev" title="github 无密码提交">
+                github 无密码提交 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -444,7 +463,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">小凡</p>
-              <p class="site-description motion-element" itemprop="description">小凡博客</p>
+              <p class="site-description motion-element" itemprop="description">究极</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -454,7 +473,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -467,7 +486,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>

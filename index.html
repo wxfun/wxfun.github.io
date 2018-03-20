@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="小凡部落" />
 
 
 
@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="小凡博客">
+<meta name="description" content="究极">
 <meta property="og:type" content="website">
-<meta property="og:title" content="小凡部落">
+<meta property="og:title" content="小凡原理">
 <meta property="og:url" content="http://xfun.me/index.html">
-<meta property="og:site_name" content="小凡部落">
-<meta property="og:description" content="小凡博客">
+<meta property="og:site_name" content="小凡原理">
+<meta property="og:description" content="究极">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小凡部落">
-<meta name="twitter:description" content="小凡博客">
+<meta name="twitter:title" content="小凡原理">
+<meta name="twitter:description" content="究极">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>小凡部落</title>
+  <title>小凡原理</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">小凡部落</span>
+        <span class="site-title">小凡原理</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -232,6 +232,126 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xfun.me/x/git-credential-caching-seconds/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小凡">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小凡原理">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/x/git-credential-caching-seconds/" itemprop="url">github 无密码提交</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T08:55:46+08:00">
+                2018-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper <span class="string">'cache --timeout 7200'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># After enabling credential caching, </span></span><br><span class="line"><span class="comment"># it will be cached for **7200 seconds (2 hour)**.</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xfun.me/x/install-ngrok-on-centos6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -241,7 +361,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小凡部落">
+      <meta itemprop="name" content="小凡原理">
     </span>
 
     
@@ -302,59 +422,17 @@
 
       
         
-          
-            <h1 id="基于CentOS6-5-自建ngrok服务"><a href="#基于CentOS6-5-自建ngrok服务" class="headerlink" title="基于CentOS6.5 自建ngrok服务"></a>基于CentOS6.5 自建ngrok服务</h1><blockquote>
+          <h1 id="基于CentOS6-5-自建ngrok服务"><a href="#基于CentOS6-5-自建ngrok服务" class="headerlink" title="基于CentOS6.5 自建ngrok服务"></a>基于CentOS6.5 自建ngrok服务</h1><blockquote>
 <p>ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放</p>
 </blockquote>
 <p>安装ngrok服务之前需要先配置<code>Go</code>和<code>Git</code>环境</p>
-<h2 id="Install-Go-1-5-On-CentOS-6"><a href="#Install-Go-1-5-On-CentOS-6" class="headerlink" title="Install Go 1.5 On CentOS 6"></a>Install Go 1.5 On CentOS 6</h2><p> 下载编译好的二进制文件压缩包 <code>go1.5.linux-amd64.tar.gz</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /tmp</span><br><span class="line">wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz</span><br><span class="line"></span><br><span class="line">如果提示证书错误或者无法下载，用下面这个命令试一下：</span><br><span class="line">wget -r -np -nd --accept=gz --no-check-certificate https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>解压下载的二进制压缩包到  <code>/usr/local</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -C /usr/local -xvzf /tmp/go1.5.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>修改环境变量 <code>/etc/profile</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export PATH=\$PATH:/usr/local/go/bin&quot; &gt;&gt; /etc/profile</span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>验证是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go version</span><br><span class="line">go version go1.5 linux/amd64      # 显示版本号 说明安装成功</span><br></pre></td></tr></table></figure></p>
-<p><code>Go1.5</code> 安装结束 </p>
-<hr>
-<h2 id="Install-Git-2-5-0-On-CentOS-6"><a href="#Install-Git-2-5-0-On-CentOS-6" class="headerlink" title="Install Git 2.5.0 On CentOS 6"></a>Install Git 2.5.0 On CentOS 6</h2><p>安装依赖包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel -y</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>下载源码包 <code>git-2.5.0</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /tmp</span><br><span class="line">wget https://www.kernel.org/pub/software/scm/git/git-2.5.0.tar.gz</span><br><span class="line"></span><br><span class="line">如果提示证书错误或者无法下载，用下面这个命令试一下：</span><br><span class="line">wget -r -np -nd --accept=gz --no-check-certificate wget https://www.kernel.org/pub/software/scm/git/git-2.5.0.tar.gz</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>解压 编译 安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar xvzf /tmp/git-2.5.0.tar.gz</span><br><span class="line">cd git-2.5.0</span><br><span class="line">./configure --prefix=/usr/local/git</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>配置环境变量并验证是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export PATH=\$PATH:/usr/local/git/bin&quot; &gt;&gt; /etc/profile</span><br><span class="line">source /etc/profile</span><br><span class="line"></span><br><span class="line">git --version</span><br><span class="line">git version 2.5.0      # 显示版本号 说明安装成功</span><br></pre></td></tr></table></figure></p>
-<p><code>Git2.5.0</code> 安装结束</p>
-<hr>
-<h2 id="Install-ngrok-2-x-On-CentOS-6"><a href="#Install-ngrok-2-x-On-CentOS-6" class="headerlink" title="Install ngrok 2.x On CentOS 6"></a>Install ngrok 2.x On CentOS 6</h2><p>获取ngrok源码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /tmp</span><br><span class="line">git clone https://github.com/inconshreveable/ngrok.git</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>生成自签名ssl证书 <code>&quot;ngrok.tech&quot; 替换为你自己的域名</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cd /tmp/ngrok</span><br><span class="line"></span><br><span class="line">openssl genrsa -out rootCA.key 2048</span><br><span class="line">openssl req -x509 -new -nodes -key rootCA.key -subj &quot;/CN=ngrok.tech&quot; -days 5000 -out rootCA.pem</span><br><span class="line">openssl genrsa -out device.key 2048</span><br><span class="line">openssl req -new -key device.key -subj &quot;/CN=ngrok.tech&quot; -out device.csr</span><br><span class="line">openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 5000</span><br><span class="line">cp rootCA.pem assets/client/tls/ngrokroot.crt</span><br><span class="line">cp device.crt assets/server/tls/snakeoil.crt</span><br><span class="line">cp device.key assets/server/tls/snakeoil.key</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>设置变量并生成ngrok服务端和客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GOOS=linux GOARCH=amd64  #如果是32位系统，这里 GOARCH=386</span><br><span class="line">make release-server release-client</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/267822-c9fa553a9756e0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ngrok_amd64_linux"></p>
-<blockquote>
-<p>编译之后，就会在ngrok源码的bin目录下生成两个可执行文件：ngrokd、ngrok。其中ngrokd就是ngrok的服务端程序，ngrok就是ngrok的客户端程序。由于现在生成的客户端ngrok只能在linux下运行，因此如果想要生成windows下的客户端程序，需要继续进行交叉编译。</p>
-</blockquote>
-<hr>
-<p>交叉编译生成windows客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd  /tmp/ngrok/</span><br><span class="line"></span><br><span class="line">GOOS=windows GOARCH=amd64 make release-server release-client</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/267822-98556ca8358f97da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ngrok_amd64_windows"></p>
-<hr>
-<p>ngrokd服务启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd  /tmp/ngrok/bin</span><br><span class="line"></span><br><span class="line">./ngrokd -domain=&quot;ngrok.tech&quot; -httpAddr=&quot;:7777&quot;</span><br></pre></td></tr></table></figure></p>
-<p>出现下面信息说明ngrokd服务启动成功<br><img src="http://upload-images.jianshu.io/upload_images/267822-7c2b3af8b5a8cf91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ngrokd service started"></p>
-<hr>
-<h2 id="ngrok-客户端使用"><a href="#ngrok-客户端使用" class="headerlink" title="ngrok 客户端使用"></a>ngrok 客户端使用</h2><p>启动ngrok客户端</p>
-<blockquote>
-<p>客户端使用，拷贝刚刚生成的<code>ngrok</code> 或者 <code>ngrok.exe</code>文件到本地，创建<code>ngrok.cfg</code>配置文件，可以根据自己的实际情况进行配置</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">创建ngrok.cfg配置文件：</span><br><span class="line">server_addr: &quot;ngrok.tech:4443&quot;</span><br><span class="line">trust_host_root_certs: false</span><br><span class="line"></span><br><span class="line">启动ngrok客户端：</span><br><span class="line">./ngrok -config=ngrok.cfg -subdomain test 8080</span><br><span class="line"></span><br><span class="line">ngrok客户端启动参数说明：</span><br><span class="line">&quot;test&quot; 是你自己定义的二级域名，不能与其他人重复</span><br><span class="line">&quot;8080&quot; 是你本地服务的端口</span><br></pre></td></tr></table></figure>
-<hr>
-<p>出现下面信息说明ngrok客户端启动成功</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/267822-3da0967492388d82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ngrok client started"></p>
-<p>ngrok客户端启动成功了<br>现在可以在外网通过访问<code>http://test.ngrok.tech:7777</code>这个地址来访问本地8080端口服务了</p>
-<blockquote>
-<p><strong><code>注意</code></strong>： 上面用到的域名<code>ngrok.tech</code> 是我自己的域名，需要替换成你自己的域名</p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/x/install-ngrok-on-centos6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -424,7 +502,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">小凡</p>
-              <p class="site-description motion-element" itemprop="description">小凡博客</p>
+              <p class="site-description motion-element" itemprop="description">究极</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -434,7 +512,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -447,7 +525,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
